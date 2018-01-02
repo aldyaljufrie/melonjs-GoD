@@ -133,7 +133,7 @@ module.exports = function(grunt) {
           src: ['data/bgm/**/*', 'data/sfx/**/*'],
           type: 'audio'
         },{
-          src: ['data/img/**/*.png'],
+          src: ['data/img/**/*.png', 'data/map/**/*.png'],
           type: 'image'
         },{
           src: ['data/img/**/*.json'],
@@ -143,6 +143,12 @@ module.exports = function(grunt) {
           type: 'tmx'
         },{
           src: ['data/map/**/*.tsx'],
+          type: 'tsx'
+        },{
+          src: ['data/tilesets/**/*.tmx', 'data/tilesets/**/*.json'],
+          type: 'tmx'
+        },{
+          src: ['data/tilesets/**/*.tsx'],
           type: 'tsx'
         }]
       }
